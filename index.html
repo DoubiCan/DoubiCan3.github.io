@@ -7,13 +7,32 @@
     <title>我的个人博客</title>
     
     <!-- 引用外部CSS文件 -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 引用外部JS文件 -->
+    <script src="script.js" defer></script>
 </head>
 <body>
 
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="closeSidebar()">×</button>
+        <div class="sidebar-content">
+            <img src="images/avatar2.png" alt="头像" class="avatar">
+            <h3>我的个人信息</h3>
+            <ul>
+                <li><a href="#">友链1</a></li>
+                <li><a href="#">友链2</a></li>
+                <li><a href="#">友链3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 页面内容 -->
     <header>
         <h1>欢迎来到我的个人博客</h1>
         <p>分享我的知识和经历</p>
+        <button class="open-btn" onclick="openSidebar()">☰</button>
     </header>
 
     <nav>
@@ -27,12 +46,6 @@
         <div class="post">
             <h2>第一篇博客文章</h2>
             <p>这是我的第一篇博客文章，欢迎阅读！</p>
-            <p><a href="#">阅读全文</a></p>
-        </div>
-        
-        <div class="post">
-            <h2>第二篇博客文章</h2>
-            <p>在这篇文章中，我会分享一些有趣的技术知识。</p>
             <p><a href="#">阅读全文</a></p>
         </div>
     </div>
